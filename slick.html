@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- 先掛css(功能大於外觀)>JS>jq>外掛 -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<style>
+		.slider{
+			width: 600px;
+			margin: auto;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src = "slick/slick.min.js"></script>	
+	<script>
+		$(function(){
+			$(".slider").slick({
+				autoplay: true,
+				dots: true,
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="slider">
+		<img src="https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg" alt="">
+		<img src="https://visualhunt.com/photos/l/7/rocking-waves-rock-sea-sand.jpg" alt="">
+		<img src="https://visualhunt.com/photos/l/7/man-ring-hand.jpg" alt="">
+		<img src="https://visualhunt.com/photos/l/8/macbook-computer-laptop.jpg" alt="">
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>light Box</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src = "slick/slick.min.js"></script>
+	<script src="lightbox/js/lightbox.min.js"></script>
+	<script>
+		$(function(){
+			$(".slider").slick({
+				autoplay: true,
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="slider">
+		<a data-lightbox = "lb" data-title = "樹" href="https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg">
+			<img src = "https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg" alt = " "></a>
+		<a data-lightbox = "lb" href="https://visualhunt.com/photos/l/7/rocking-waves-rock-sea-sand.jpg">
+			<img src = "https://visualhunt.com/photos/l/7/rocking-waves-rock-sea-sand.jpg" alt = " "></a>
+		<a data-lightbox = "lb2" href="https://visualhunt.com/photos/l/7/man-ring-hand.jpg">
+			<img src = "https://visualhunt.com/photos/l/7/man-ring-hand.jpg" alt = " "></a>
+		<a data-lightbox = "lb2" href="https://visualhunt.com/photos/l/8/macbook-computer-laptop.jpg">
+			<img src = "https://visualhunt.com/photos/l/8/macbook-computer-laptop.jpg" alt = " "></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<style>
+		.slider{
+			width: 600px;
+			height: 600px;
+			overflow: hidden;
+		}
+		.wrapper{
+			transition: all .5s;
+		}
+		.slider .photo{
+			width: 600px;
+			height: 600px;
+			/*float: left;*/
+		}
+		.slider .photo img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script>
+		$(function(){
+			var photoPos = 0;
+			var photoHeight = $(".photo").height();
+			var photoCounts = $(".photo").length;
+			var speed = 3000;
+			var duration = 1500
+			// console.log(photoCounts);
+			//$(".wrapper").css("width", photoPos*photoCounts);
+			// $(".wrapper").css({
+			// 	width: photoHeight*photoCounts,
+			// })
+			function Move(){
+				$(".wrapper").animate({
+					marginTop: -(photoPos*photoHeight),
+				}, duration)
+			}
+			function Cycle(){
+				if(photoPos == photoCounts-1){
+					photoPos=0;
+				}else{
+					photoPos++;
+				}
+				Move();
+			}
+			setInterval(Cycle, speed);
+		});
+	</script>
+</head>
+<body>
+	<div class="slider">
+		<div class="wrapper">
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/7/rocking-waves-rock-sea-sand.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/7/man-ring-hand.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/8/macbook-computer-laptop.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

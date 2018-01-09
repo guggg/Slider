@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Masonry</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.box{
+			width: 300px;
+			background-color: #1ED6AC;
+			margin: 15px;
+			color: #222;
+			padding: 10px;
+		}
+		img{
+			width: 100%;
+		}
+		.container{
+			margin: auto;
+		}
+	</style>
+	<script>
+		$(function(){ //要先載入圖片，不然有可能造成版型跑掉
+			$(".container").imagesLoaded(function(){ //所以這一行是先強制圖片載入後，才去跑版型，imagesLoaded是外掛
+				$(".container").masonry({
+					isFitWidth: true,
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde nihil reprehenderit perferendis at, quam distinctio harum asperiores corrupti veniam enim repellendus? Dolores aliquid expedita odio velit ipsa laboriosam praesentium.
+		</div>
+		<div class="box">
+			<img src="https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg" alt="">
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa iste ipsum rerum fuga dolorum nisi quisquam corporis. Molestiae eius odit ab sapiente nesciunt laborum non quod sunt consequatur repudiandae veritatis minus eaque, accusantiu
+		</div>
+		<div class="box">
+			<img src="https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg" alt="">
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa iste ipsum rerum fuga dolorum nisi quisquam corporis. Molestiae eius odit ab sapiente nesciunt laborum non quod sunt consequatur repudiandae veritatis minus eaque, accusantium nulla expedita debitis eos cum veniam inventore a alias omnis quisquaboriosam, necessitatibus? Optio animi nisi, repudiandae recusandae quasi quas inventore, eligendi doloremque quam pariatur ducimus assumenda sit quo. Fugit provident commodi molestiae repellat consequatur incidunt unde dolorem error, dicta suscipit explicabo, modi saepe iste earum, pariatur tempore, nulla repellendus quae maxime animi dignissimos inventore?
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa iste ipsum rerum fuga dolorumprovident com nisi, repudiandae recusandae quasi quas inventore, eligendi doloremque quam pariatur ducimus assumenda sit quo. Fugit provident commodi molestiae repellat consequatur incidunt unde dolorem error, dicta suscipit explicabo, modi saepe iste earum, pariatur tempore, nulla repellendus quae maxime animi dignissimos inventore?
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa menda sit quo. Fugit provident commodi molestiae repellat consequatur incidunt unde 
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quidem sit fuga, optio repellat, veritatis explicabo quibusdam dolores nihil qui nobis officiis perspiciatis dolorem odit dolor quae id nulla dolore numquam est, ipsum suscipit culpa hic accusamus. Est quaeratm illum facilis at, non harum possimus minus sed. Tenetur praesentium aliquid beatae doloremque provident aspernatur quo perferendis velit veniam, omnis, unde possimus est repudiandae odit cumque quos deleniti vitae sapiente optio dolores esstas eum iure natus labore, sequi nemo dolorum reprehenderit quae! Porro laborum eligendi nobis, rerum, aut iste error possimus laboriosam voluptas autem esse totam optio recusandae fuga expedita. Sapiente cum laudantium eligendi est voluptate corrupti delectus asperiores optio laborum, vel libero nam accusamus odio perferendis maiores, dolor consectetur mollitia sint eaque dolore beatae repellendus ratione praesentium corporis. Accusamus similique deleniti quas, necessitatibus quisquam harum fugiat quia odit, doloremque reprehenderit officiis. Odio minus, nostrum molestiae.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quidem sit fuga, optio repellat, veritatis explicabo quibusdam dolores nihil qui nobis officiis perspiciatis dolorem odit dolor quae id nulla dolore numquam est, ipsum suscipit culpa hic accuss provident labore coatae repellendus ratione praesentium corporis. Accusamus similique deleniti quas, necessitatibus quisquam harum fugiat quia odit, doloremque reprehenderit officiis. Odio minus, nostrum molestiae.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam sapiente, tenetur, quisquam architecto recusandae dolores iusto provident, rerum consectetur consequuntur officia, odit repudiandae sed. Os odit sint rerum cupiditate vitae et iure, aut eos optio quia omnis aliquam velit dolores laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam sapient
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosamte amet earum facilis, itaque cupiditate eos quaerat, possimus voluptas! Cum totam quibusdam magni vero ipsum, a ut architecto animi, voluptatum quos suscipit, laboriosam? Eum blanditiis, ut omnis autem cupiditate beatae sint, facilis explicabo. Ut mollitia nisi quis odit sint rerum cupiditate vitae et iure, aut eos optio quia omnis aliquam velit dolores laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consecilis, itaque cupiditate eos quaerat, poss
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim labo laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo aor ullam ducimus quos excepturi asperiores, nihil pariatur sed deserunt sit. Unde aut ad voluptatum iure deserunt quae, odio itaque nostrum a, explicabo ipsam quod id veniam? Laborum odit, totam, quidem quia saepe consequatur harum voluptas quisquam eligendi alias nierat,
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, c
+		</div>
+
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam sapiente, tenetur, quisquam architecto recusandae dolores iusto provident, rerum consectetur consequuntur officia, odit repudiandae sed. Officiis amet, velit saepe, atque tempore nam consequatur molestias dolores impedit minima culpa. Omnis, nihil voluptates expedita iure sapiente, natus quas dolores eum maxime molestias! Laudantium neque quasi eaque beatae voluptatibus distinctio. Libero repellat blanditiis aspernatur dolorem laudantium quisquam, aliquam porro quod exercitationem ipsa atque maiores reprehenderit praesentium ut inventore repellendus quia. Nam qui laboriosam non. Repellat qui omnis ex, ea numquam minus iste veritatis, ipsam fugit distinctio. Nesciunt saepe deleniti nobis optio soluta
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam explicabo. Ut mollitia nisi quis odit sint rerum cupiditate vitae et iure, aut eos optio quia omnis aliquam velit dolores laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique p
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde nihil reprehenderit perferendis at, quam distinctio harum asperiores corrupti veniam enim repellendus? Dolores aliquid expedita odio velit ipsa laboriosam praesentium.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa iste ipsum rerum fuga dolorum nisi quisquam corporis. Molestiae eius odit ab sapiente nesciunt laborum non quod sunt consequatur repudiandae veritatis minus eaque, accusantiu
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa iste ipsum rerum fuga dolorum nisi quisquam corporis. Molestiae eius odit ab sapiente nesciunt laborum non quod sunt consequatur repudiandae veritatis minus eaque, accusantium nulla expedita debitis eos cum veniam inventore a alias omnis quisquaboriosam, necessitatibus? Optio animi nisi, repudiandae recusandae quasi quas inventore, eligendi doloremque quam pariatur ducimus assumenda sit quo. Fugit provident commodi molestiae repellat consequatur incidunt unde dolorem error, dicta suscipit explicabo, modi saepe iste earum, pariatur tempore, nulla repellendus quae maxime animi dignissimos inventore?
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa iste ipsum rerum fuga dolorumprovident com nisi, repudiandae recusandae quasi quas inventore, eligendi doloremque quam pariatur ducimus assumenda sit quo. Fugit provident commodi molestiae repellat consequatur incidunt unde dolorem error, dicta suscipit explicabo, modi saepe iste earum, pariatur tempore, nulla repellendus quae maxime animi dignissimos inventore?
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, repudiandae, nam impedit est nobis adipisci aperiam culpa menda sit quo. Fugit provident commodi molestiae repellat consequatur incidunt unde 
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quidem sit fuga, optio repellat, veritatis explicabo quibusdam dolores nihil qui nobis officiis perspiciatis dolorem odit dolor quae id nulla dolore numquam est, ipsum suscipit culpa hic accusamus. Est quaeratm illum facilis at, non harum possimus minus sed. Tenetur praesentium aliquid beatae doloremque provident aspernatur quo perferendis velit veniam, omnis, unde possimus est repudiandae odit cumque quos deleniti vitae sapiente optio dolores esstas eum iure natus labore, sequi nemo dolorum reprehenderit quae! Porro laborum eligendi nobis, rerum, aut iste error possimus laboriosam voluptas autem esse totam optio recusandae fuga expedita. Sapiente cum laudantium eligendi est voluptate corrupti delectus asperiores optio laborum, vel libero nam accusamus odio perferendis maiores, dolor consectetur mollitia sint eaque dolore beatae repellendus ratione praesentium corporis. Accusamus similique deleniti quas, necessitatibus quisquam harum fugiat quia odit, doloremque reprehenderit officiis. Odio minus, nostrum molestiae.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quidem sit fuga, optio repellat, veritatis explicabo quibusdam dolores nihil qui nobis officiis perspiciatis dolorem odit dolor quae id nulla dolore numquam est, ipsum suscipit culpa hic accuss provident labore coatae repellendus ratione praesentium corporis. Accusamus similique deleniti quas, necessitatibus quisquam harum fugiat quia odit, doloremque reprehenderit officiis. Odio minus, nostrum molestiae.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam sapiente, tenetur, quisquam architecto recusandae dolores iusto provident, rerum consectetur consequuntur officia, odit repudiandae sed. Os odit sint rerum cupiditate vitae et iure, aut eos optio quia omnis aliquam velit dolores laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam sapient
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosamte amet earum facilis, itaque cupiditate eos quaerat, possimus voluptas! Cum totam quibusdam magni vero ipsum, a ut architecto animi, voluptatum quos suscipit, laboriosam? Eum blanditiis, ut omnis autem cupiditate beatae sint, facilis explicabo. Ut mollitia nisi quis odit sint rerum cupiditate vitae et iure, aut eos optio quia omnis aliquam velit dolores laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consecilis, itaque cupiditate eos quaerat, poss
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim labo laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo aor ullam ducimus quos excepturi asperiores, nihil pariatur sed deserunt sit. Unde aut ad voluptatum iure deserunt quae, odio itaque nostrum a, explicabo ipsam quod id veniam? Laborum odit, totam, quidem quia saepe consequatur harum voluptas quisquam eligendi alias nierat,
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, c
+		</div>
+
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam sapiente, tenetur, quisquam architecto recusandae dolores iusto provident, rerum consectetur consequuntur officia, odit repudiandae sed. Officiis amet, velit saepe, atque tempore nam consequatur molestias dolores impedit minima culpa. Omnis, nihil voluptates expedita iure sapiente, natus quas dolores eum maxime molestias! Laudantium neque quasi eaque beatae voluptatibus distinctio. Libero repellat blanditiis aspernatur dolorem laudantium quisquam, aliquam porro quod exercitationem ipsa atque maiores reprehenderit praesentium ut inventore repellendus quia. Nam qui laboriosam non. Repellat qui omnis ex, ea numquam minus iste veritatis, ipsam fugit distinctio. Nesciunt saepe deleniti nobis optio soluta
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique perferendis, sint. Doloremque, incidunt, suscipit. Labore repellendus reprehenderit quam explicabo quo facere doloremque possimus beatae amet, similique voluptate non veritatis ea dolore delectus sunt. Neque enim laboriosam explicabo. Ut mollitia nisi quis odit sint rerum cupiditate vitae et iure, aut eos optio quia omnis aliquam velit dolores laborum similique culpa beatae. Deleniti ipsam vero nemo suscipit, est itaque dolore! Perspiciatis, tempora quasi beatae ipsa rerum saepe sequi sapiente est consequuntur, reprehenderit in.
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo saepe beatae repudiandae harum sed enim exercitationem explicabo at necessitatibus facilis odio doloremque reprehenderit inventore excepturi, esse, non sunt laboriosam ipsum cupiditate sapiente rerum similique p
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sliderFade</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		.slider{
+			width: 600px;
+			height: 600px;
+			position: relative;
+		}
+		.wrapper{
+			transition: all .5s;
+		}
+		.slider .photo{
+			width: 600px;
+			height: 600px;
+			float: left;
+			position: absolute; 
+			display: none;
+		}
+		.slider .photo img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script>
+		$(function(){
+			let photo = $(".photo"); //會是一個陣列
+			console.log(photo);
+			let photoNums = photo.length; //陣列長度
+			let currentPosition = 0;
+			photo.eq(0).show(); //找同輩，適合全部class = photo，意思就是找photo裡面的第幾個
+			 //siblings("photo")[0]，這個適合找class名字不同
+
+			 function move(){
+			 	let nextPhoto = (currentPosition+1)%photoNums; //1,2,3,0
+			 	photo.eq(currentPosition).fadeOut(1200); //淡出變慢
+			 	photo.eq(nextPhoto).fadeIn(1200); //淡入變慢
+			 	currentPosition++; //currentPosition = nextPhoto
+			 }
+			 setInterval(move,3000);
+		})
+	</script>
+</head>
+<body>
+	<div class="slider">
+		<div class="wrapper">
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/4/mists-whiting-black-amp-white.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/7/rocking-waves-rock-sea-sand.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/7/man-ring-hand.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="https://visualhunt.com/photos/l/8/macbook-computer-laptop.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
